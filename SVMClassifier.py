@@ -76,7 +76,7 @@ indexFile = int(raw_input('Training is done, test image number?'))
 # PLOT IMAGE FOR VISUALIZATION
 plt.imshow(real_digit.images[indexFile], cmap=plt.cm.gray_r, interpolation='nearest')
 # SHOW PREDICTION RESULT
-plt.title("Predicted : %i" % classifier.predict(classifier.predict(hog(deskew(test_digit.images[indexFile])))))
+plt.title("Predicted : %i" % classifier.predict(hog(deskew(test_digit.images[indexFile]))))
 plt.axis('off')
 plt.show()
 
